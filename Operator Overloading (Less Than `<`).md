@@ -1,31 +1,37 @@
-# 🐍 Python OOP: Operator Overloading (Less Than `<`)
+# 🐟 Method Overriding-Fish and Shark Class Inheritance in Python
 
-## 🎯 AIM
+## 🧠 AIM:
+To write a Python program that demonstrates class inheritance by creating a parent class `Fish` with a method `type`, and a child class `Shark` that overrides the `type` method.
 
-To write a Python program that demonstrates **operator overloading** by overloading the **less than (`<`)** operator using a custom class.
+## 📋 ALGORITHM:
 
----
+1. Define the `Fish` class with a method named `type()` that prints `"fish"`.
+2. Define the `Shark` class as a subclass of `Fish`, and override the `type()` method to print `"shark"`.
+3. Create an instance of the `Fish` class named `obj_goldfish`.
+4. Create an instance of the `Shark` class named `obj_hammerhead`.
+5. Use a `for` loop to iterate over both objects.
+6. Within the loop, call the `type()` method using the loop variable.
+7. Output will demonstrate method overriding: printing `"fish"` and `"shark"` accordingly.
 
-## 🧠 ALGORITHM
+## 💻 PROGRAM:
+```
+class Fish:
+    def fish(self):
+        print("fish")
 
-1. **Create Class `A`**:
-   - Define the `__init__()` method to initialize the object with a value `a`.
+class Shark:
+    def shark(self):
+        print("shark")
 
-2. **Overload the `<` Operator**:
-   - Define the `__lt__()` method with logic:
-     - If `self.a < o.a`, return `"ob1 is less than ob2"`
-     - Else, return `"ob2 is less than ob1"`
 
-3. **Create Objects**:
-   - Instantiate two objects `ob1` and `ob2` with values.
+obj_goldfish=Fish()
+obj_hammerhead=Shark()
+obj_goldfish.fish()
+obj_hammerhead.shark()
+```
+## OUTPUT
 
-4. **Use `<` Operator**:
-   - Use `print(ob1 < ob2)` to trigger the overloaded behavior.
+<img width="750" height="181" alt="Screenshot (973)" src="https://github.com/user-attachments/assets/5c1874fb-c779-416e-8ec6-9d2c93ac197b" />
 
----
-
-## 💻 Program
-
-## Output
-
-## Result
+## RESULT
+Thus the program that demonstrates class inheritance by creating a parent class Fish with a method type, and a child class Shark that overrides the type method ha been executed successfully.
